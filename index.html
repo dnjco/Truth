@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <!--<link rel="stylesheet" href="css/accordion.css">--->
+        <link href="css/fonts/fonts.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/colors.css">
+        <meta charset="utf-8">
+        <!--<script src="js/!0ld/jquery-3.1.1.min.js"></script>-->
+        <script src="js/css.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body onresize="adjust()" onload="load()">
+        <!--<h1 class="h1">D&J Co.</h1>-->
+        <!--<img src="img/Philos.png" id="img44">-->
+        <div id="loadblank"></div>
+        <div class="holder" id="inputholder">
+            <div class="holder" id="holder">
+                <p class="pseudoinput" id="input"><h2 id="input2">Insertar frase</h2></p>
+            </div>
+            <!--<input type="text" class="pseudoinput" id="input">--><!-- I think is better to use a input rather than a label -->
+            <div class="butWrapper" id="butWrapper">
+                <button class="button" id="negB" onclick="addtI(nSym)">&#172</button>
+                <button class="button" id="conB" onclick="addtI(cSym)">&#8743</button>
+                <button class="button" id="disB" onclick="addtI(dSym)">&#8744</button>
+                <button class="button" id="iimpB" onclick="addtI(iiSym)">&#8656</button>
+                <button class="button" id="bimB" onclick="addtI(bSym)">&#8660</button>
+                <button class="button" id="impB" onclick="addtI(iSym)">&#8658</button>
+                <button class="button" id="oBB" onclick="addtI(oBSym)">(</button>
+                <button class="button" id="cBB" onclick="addtI(cBSym)">)</button>
+                <button class="button" id="letB" onclick="lttr(nL)">p</button>
+            </div>
+            <button class="button" id="delB" onclick="deleteN(1)"><!---<img src="IMG/Backspace0.png" alt="&#9003" id="backspaceimage">-->&#9003</button>
+            <button class="button" id="testB" onclick="process()"><b>&#10003</b></button>
+            <button class="floated" id="uBcounterdiv" onclick="cUb()"><p id="uBcounter"></p></button>
+        </div>
+        <div class="holder" id="outputholder" style="display: none"></div>
+    </body>
+</html>
